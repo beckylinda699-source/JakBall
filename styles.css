@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #1b4332;
+  font-size: 2.2rem;
+}
+
+header p {
+  color: #555;
+  margin-top: 5px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #1b4332;
+}
+
+/* Trivia Options */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.option-btn {
+  background-color: #e9ecef;
+  color: #333;
+  text-align: left;
+  margin-top: 0;
+}
+
+.option-btn:hover {
+  background-color: #dee2e6;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.feedback.correct {
+  color: #2b9348;
+}
+
+.feedback.incorrect {
+  color: #d90429;
+}
+
+/* Match Scheduler */
+#schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#schedule-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.schedule-list {
+  list-style: none;
+}
+
+.schedule-list li {
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-left: 4px solid #2d6a4f;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #d90429;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.delete-btn:hover {
+  background: #9d0208;
+}
