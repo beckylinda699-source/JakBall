@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sports Hub Mini App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🏆 Sports Hub</h1>
+    <p>Trivia, Fun Facts & Match Day Scheduler</p>
+  </header>
+
+  <main class="container">
+    
+    <!-- Section 1: Daily Fun Fact -->
+    <section class="card">
+      <h2>⚽ Daily Football Fun Fact</h2>
+      <p id="fact-text">Loading daily fact...</p>
+      <button id="new-fact-btn">Get Another Fact</button>
+    </section>
+
+    <!-- Section 2: Instant Sports Trivia -->
+    <section class="card">
+      <h2>🧠 Instant Sports Trivia</h2>
+      <p id="trivia-question">Click below to start playing!</p>
+      <div id="trivia-options" class="options-container"></div>
+      <p id="trivia-feedback" class="feedback"></p>
+      <button id="next-trivia-btn">Next Question</button>
+    </section>
+
+    <!-- Section 3: Match Day Schedule Manager -->
+    <section class="card">
+      <h2>📅 Match Day Scheduler</h2>
+      <form id="schedule-form">
+        <input type="text" id="match-teams" placeholder="Teams (e.g. Arsenal vs Chelsea)" required />
+        <input type="datetime-local" id="match-time" required />
+        <button type="submit">Add Match</button>
+      </form>
+
+      <ul id="schedule-list" class="schedule-list"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
